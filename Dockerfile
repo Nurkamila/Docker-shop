@@ -19,4 +19,4 @@ ENV DB_PORT=7900
 ENV SECRET_KEY=django-insecure-svw2og$!fs5ihel_18s80^dud$0u2af%fzc%p(&!t2z)4qepn_
 ENV PORT=8000
 
-CMD gunicorn --bind 0.0.0.0.8000 config.wsgi:application
+CMD gunicorn --bind 0.0.0.0.$PORT config.wsgi:application
